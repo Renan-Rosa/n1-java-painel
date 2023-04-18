@@ -33,18 +33,18 @@ public class Main {
                 System.exit(0);
                 //encerrar programa
             } else if (Objects.equals(comando, "promo")){
-                System.out.println("chamando o metodo promocao");
+                System.out.println("Informe a posicao do produto da promocao ");
+                int posicao = scanner.nextInt();
+                promo(produtos, posicao);
                 // metodo para adicionar uma promocao
-                public static void promo(List<String> produtos){
-                    System.out.println("Qual a posição do produto que deseja mover para a área de promoção?");
 
-                }
                 //1 etapa - solicitar ao usuario qual elemento deve ir para a promocao
                 //2 etapa - enviar esse elemento ou posicionar esse elemento no topo da lista em letras maiusculas
 
             }
         }
     }
+
 
     public static void showPainel(List<String> elementos, String empresa){
         System.out.println("===========================================");
@@ -54,6 +54,16 @@ public class Main {
             System.out.println(elemento);
             System.out.println("-----------------------------------------");
         }
+
+
+    }
+
+    public static void promo(List<String> elementos, int posicao){
+
+       //pegar o elemento da posicao indicada/
+        //mover esse elemento para primeira posicao
+        //fazer com que esse elemento esteja com letras maiusculas
+
 
 
     }
